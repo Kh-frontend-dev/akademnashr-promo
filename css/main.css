@@ -6,6 +6,11 @@ body {
     letter-spacing: 0.5px;
 }
 
+*:focus {
+    outline: 2px dotted #ff7500;
+    outline-offset: 3px;
+}
+
 /* SITE-HEADER  */
 .site-header {
     background-color: #ffffff;
@@ -232,14 +237,14 @@ body {
 .site-footer-links a {
     text-decoration: none;
     color: #252420;
-    transition: background-color 0.4s ease,
+    transition: color 0.4s ease,
         opacity 0.4s ease;
 }
 
 .site-footer-links a:hover {
-    background-color: #ff7500;
+    color: #ff7500;
 }
 
-.site-footer-links a:focus {
+.site-footer-links a:active {
     opacity: 0.6;
 }
